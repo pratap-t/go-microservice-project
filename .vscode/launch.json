@@ -1,0 +1,49 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Broker Service",
+            "type": "go",
+            "request": "launch",
+            "program": "${workspaceFolder}/broker-service/cmd/api",
+            "cwd": "${workspaceFolder}/broker-service",
+            "env": {},
+            "args": []
+        },
+        {
+            "name": "Debug Authentication Service",
+            "type": "go",
+            "request": "launch",
+            "program": "${workspaceFolder}/authentication-service/cmd/api",
+            "cwd": "${workspaceFolder}/authentication-service",
+            "env": {},
+            "args": []
+        },
+        {
+            "name": "Debug Logger Service",
+            "type": "go",
+            "request": "launch",
+            "program": "${workspaceFolder}/logger-service/cmd/api",
+            "cwd": "${workspaceFolder}/logger-service",
+            "env": {},
+            "args": []
+        },
+        {
+            "name": "Debug Front-End Service",
+            "type": "go",
+            "request": "launch",
+            "program": "${workspaceFolder}/front-end/cmd/web",
+            "cwd": "${workspaceFolder}/front-end",
+            "env": {},
+            "args": []
+        },
+        {
+            "name": "Attach to Docker (Delve)",
+            "type": "go",
+            "request": "attach",
+            "mode": "remote",
+            "host": "127.0.0.1",
+            "port": 4000
+        }
+    ]
+}

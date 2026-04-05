@@ -50,7 +50,7 @@ func main() {
 
 	// start web server
 	log.Println("Starting serve on port", webPort)
-	go app.serve()
+	app.serve()
 }
 
 func (app *Config) serve() {
